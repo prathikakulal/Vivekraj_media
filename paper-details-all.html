@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Research & Development - Vivek Raj</title>
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: rgb(199, 199, 199);
+    }
+
+    /* Updated for flex layout to put image on the right */
+    .paper-box {
+      background: #fff;
+      padding: 35px;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+      margin-bottom: 20px;
+      display: flex; /* Enables flexbox */
+      align-items: flex-start; /* Aligns items to the top */
+      gap: 25px; /* Space between text and image */
+    }
+
+    /* Container for the text content to ensure it takes remaining space */
+    .paper-info {
+      flex: 1;
+    }
+
+    /* Styling for the thumbnail on the right */
+    .paper-thumbnail {
+      flex-shrink: 0;
+      width: 180px; /* Fixed width for the thumbnail */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .paper-thumbnail img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .paper-box h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #050d18;
+      margin-bottom: 15px;
+      margin-top: 0; /* Reset margin for alignment */
+    }
+
+    details[open] summary {
+      display: none;
+    }
+
+    details summary {
+      cursor: pointer;
+      color: #149ddd;
+      font-weight: 600;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .extra-text {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.8;
+      animation: fadeIn 0.5s ease;
+      margin-top: 15px;
+    }
+
+    .read-less {
+      display: inline-block;
+      cursor: pointer;
+      color: #149ddd;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .patent-card {
+      display: block;
+      width: 100%;
+      height: 420px;          
+      overflow: hidden;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .patent-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Responsive fix: Stack vertically on mobile */
+    @media (max-width: 768px) {
+      .paper-box {
+        flex-direction: column-reverse; /* Put image on top of text on mobile */
+        align-items: center;
+      }
+      .paper-thumbnail {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="assets/img/VivekRaj.jpg" alt="" class="img-fluid rounded-circle" style="width: 40%; height: 65%" />
+    </div>
+    
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Vivek Raj</h1>
+    </a>
+    <div class="social-links text-center">
+        <p>Namaste! Welcome to my Website!</p>
+      </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#home"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#Downloads"><i class="bi bi-download navicon"></i>Downloads</a></li>
+        <li><a href="/media.html"><i class="bi bi-newspaper navicon"></i>Media Coverage</a></li>
+        <li><a href="index.html#research-development" class="active"><i class="bi bi-gear navicon"></i> Research & Development</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+  
+    <section class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="margin-top: 30px;">Research & Development</h2>
+        <p>Our Research & Development efforts center on applying artificial intelligence and advanced engineering to solve complex challenges in modern agriculture. Through rigorous experimentation and real-world validation, we deliver scalable, high-impact innovations.</p>
+      </div>
+
+      <h2 style="text-align: center;">Our International Journals</h2><br>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          
+          <div class="col-lg-10 col-md-11" data-aos="fade-up" data-aos-delay="100">
+            <div class="paper-box">
+              <div class="paper-info">
+                <h3>Transforming Saffron Cultivation with Smart Hydroponics: An Artificial Intelligence of Things Approach to Crops and Nutrients Management</h3>
+                <p>At Panama Corporation LLC, saffron farming is guided by continuous research and development to improve quality, efficiency, and sustainability. </p>
+                <details id="paper1">
+                  <summary class="read-more">Read More +</summary>
+                  <div class="extra-text">
+                    Patents and peer-reviewed journal publications form an essential part of this ecosystem, ensuring that our work contributes meaningfully to global knowledge while remaining grounded in real farm conditions. This publication represents our first research paper to be published in an international peer-reviewed journal, marking an important milestone in formally documenting our research-driven approach to smart saffron cultivation.
+
+The paper presents an integrated framework that combines Artificial Intelligence and Internet of Things technologies with hydroponic farming for saffron cultivation. It focuses on intelligent nutrient management, environmental monitoring, and data-driven crop recommendations using machine learning models such as Random Forest, Support Vector Machines, K-Nearest Neighbors, and XGBoost. By leveraging real-time sensor data and agricultural datasets, the study demonstrates how AI-based decision systems can optimize growth conditions, reduce complexity in farm operations, and significantly improve yield efficiency and consistency in a high-value crop like saffron.
+
+This research has the potential to transform agriculture by enabling precision-driven, resource-efficient, and scalable cultivation of high-value crops in controlled environments. The application of AI-enabled hydroponics reduces dependency on geography, climate variability, and manual interventions, making advanced farming accessible beyond traditional growing regions. At our farms, the implementation of the proposed models has already shown tangible benefits, including improved yield stability, better nutrient utilization, reduced water consumption, and enhanced predictability of crop outcomes. These results clearly demonstrate how research-led innovation can directly translate into measurable gains on the ground, paving the way for a more sustainable and technologically empowered agricultural future.
+                    <br><br>
+                    <span class="read-less" onclick="document.getElementById('paper1').removeAttribute('open');">Read Less -</span>
+                  </div>
+                </details>
+              </div>
+              <div class="paper-thumbnail">
+                <a href="assets/img/paper_1.jpeg" target="_blank">
+                  <img src="assets/img/paper_1.jpeg" alt="Paper Thumbnail" style="cursor: pointer;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-10 col-md-11" data-aos="fade-up" data-aos-delay="200">
+            <div class="paper-box">
+              <div class="paper-info">
+                <h3>Early Detection of Diseases in Hydroponic Saffron Crops using a Diffused Concurrent Convolution Neural Network for Smart Farming</h3>
+                <p>At Panama Corporation LLC, our saffron farming initiatives are driven by continuous research and innovation, addressing practical farming challenges through scientific inquiry. </p>
+                <details id="paper2">
+                  <summary class="read-more">Read More +</summary>
+                  <div class="extra-text">
+                    Disease management and crop health monitoring have been key focus areas of our R and D efforts, given their direct impact on yield quality and economic viability. This second research publication further strengthens our research culture, reflecting our commitment to advancing smart agriculture through validated, peer reviewed scientific contributions that emerge directly from real farm requirements. This paper focuses on the early detection of diseases in hydroponic saffron crops using an advanced deep learning framework based on a Diffused Concurrent Convolution Neural Network. The study proposes an image based disease detection pipeline that enables accurate identification of crop health issues at an early stage, even in dense and controlled hydroponic environments where visual symptoms are subtle. By processing non sequential crop image data and associated environmental inputs, the model achieves very high classification accuracy and outperforms established convolutional neural network baselines, demonstrating its effectiveness for precision disease diagnosis in saffron cultivation. The outcomes of this research have the potential to significantly transform disease management practices in agriculture by shifting from reactive treatment to proactive and predictive crop health monitoring. Early and automated disease detection reduces crop losses, minimizes unnecessary chemical usage, and enhances overall farm sustainability. At our own farms, deploying this approach has resulted in timely interventions, improved plant health, reduced manual inspection overheads, and greater consistency in saffron yield and quality. These tangible benefits underscore how research driven artificial intelligence solutions can deliver direct, scalable impact in modern agriculture.
+                    <br><br>
+                    <span class="read-less" onclick="document.getElementById('paper2').removeAttribute('open');">Read Less -</span>
+                  </div>
+                </details>
+              </div>
+              <div class="paper-thumbnail">
+                <a href="assets/img/paper_2.jpeg" target="_blank">
+                  <img src="assets/img/paper_2.jpeg" alt="Paper Thumbnail" style="cursor: pointer;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-10 col-md-11" data-aos="fade-up" data-aos-delay="300">
+            <div class="paper-box">
+              <div class="paper-info">
+                <h3>Hydroponic Cultivation of Saffron for Enhanced Pharmaceutical Bioactive Compound Production</h3>
+                <p>At Panama Corporation LLC, our work in saffron cultivation is driven by a research first philosophy that integrates agriculture, biotechnology, and controlled environment systems. </p>
+                <details id="paper3">
+                  <summary class="read-more">Read More +</summary>
+                  <div class="extra-text">
+                    Beyond yield improvement, a key focus of our R and D efforts has been enhancing the intrinsic quality of saffron, particularly its bioactive and pharmaceutical value. This third research publication reflects our continued commitment to advancing scientifically validated cultivation methods that align agricultural production with the stringent requirements of pharmaceutical and nutraceutical industries. This paper examines hydroponic cultivation of saffron as a controlled and scalable approach for enhancing the production of bioactive compounds such as crocin, crocetin, picrocrocin, and safranal. By systematically optimizing nutrient formulations and environmental parameters including temperature, humidity, light intensity, and root zone conditions, the study compares hydroponically grown saffron with soil based cultivation. Quantitative analysis using high performance liquid chromatography demonstrates significantly higher stigma yield and elevated concentrations of key bioactive compounds in hydroponically cultivated saffron, highlighting the advantages of precision controlled growth systems. The findings of this research have far reaching implications for agriculture and the pharmaceutical supply chain by enabling consistent, high quality, and standardized saffron production. Hydroponic cultivation reduces variability caused by climate and soil conditions while improving both yield and compound purity, making saffron a more reliable raw material for medical and therapeutic applications. At our farms, adopting these controlled cultivation protocols has resulted in superior quality output, improved consistency across production cycles, and enhanced value realization from each harvest. This work demonstrates how advanced farming systems can bridge the gap between agriculture and pharmaceutical grade production, opening new pathways for sustainable and high impact agri innovation.
+                    <br><br>
+                    <span class="read-less" onclick="document.getElementById('paper3').removeAttribute('open');">Read Less -</span>
+                  </div>
+                </details>
+              </div>
+              <div class="paper-thumbnail">
+                <a href="assets/img/paper_3.jpeg" target="_blank">
+                  <img src="assets/img/paper_3.jpeg" alt="Paper Thumbnail" style="cursor: pointer;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-10 col-md-11" data-aos="fade-up" data-aos-delay="300">
+            <div class="paper-box">
+              <div class="paper-info">
+                <h3>AI-Guided Hydroponic Cultivation of Silybum marianum: A Deep Learning Framework for Real-Time Growth Optimization and Phytochemical Enhancement</h3>
+                <p>At Panama Corporation LLC, our research efforts extend beyond food crops into medicinal and high value plants where consistency, quality, and bioactive potency are critical.</p>
+                <details id="paper4">
+                  <summary class="read-more">Read More +</summary>
+                  <div class="extra-text">
+                    At Panama Corporation LLC, our research efforts extend beyond food crops into medicinal and high value plants where consistency, quality, and bioactive potency are critical. Our R and D philosophy integrates agriculture with artificial intelligence, automation, and controlled environment systems to address real world challenges faced by modern cultivation. This fourth research publication reflects our continued focus on translating advanced computational models into practical farming solutions, particularly in the domain of medicinal plant production where precision and standardization are essential.
+
+This paper presents an AI guided hydroponic cultivation framework for Silybum marianum, commonly known as milk thistle, aimed at real time growth optimization and enhancement of phytochemical content. The study integrates IoT based environmental sensing, computer vision, convolutional neural networks, and reinforcement learning to continuously monitor and adjust critical parameters such as nutrient composition, pH, electrical conductivity, temperature, humidity, and light intensity. By dynamically responding to plant growth patterns and environmental variations, the proposed deep learning framework demonstrates significant improvements in both biomass yield and silymarin concentration when compared to static control based hydroponic systems.
+
+The outcomes of this research highlight a transformative pathway for medicinal plant agriculture by enabling precise, data driven, and adaptive cultivation strategies. AI powered hydroponics allows growers to move from fixed schedules to intelligent real time decision making, resulting in higher phytochemical yields, improved resource efficiency, and consistent product quality. At our farms, the adoption of such AI guided cultivation protocols has led to measurable gains in plant performance, reduced wastage of inputs, and enhanced reliability of medicinal compound production. This work reinforces the role of artificial intelligence as a cornerstone of future precision agriculture, bridging the gap between farming, biotechnology, and pharmaceutical grade cultivation
+<br>
+<span class="read-less" onclick="document.getElementById('paper4').removeAttribute('open');">Read Less -</span>
+                  </div>
+                </details>
+              </div>
+              <div class="paper-thumbnail">
+                <a href="assets/img/paper_4.jpeg" target="_blank">
+                  <img src="assets/img/paper_4.jpeg" alt="Paper Thumbnail" style="cursor: pointer;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="patents" class="section light-background">
+      
+      <h2 style="text-align: center;">Our International Patents</h2><br>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <a href="assets/img/patent1.jpeg" target="_blank" class="patent-card" data-aos="fade-up">
+              <img src="assets/img/patent1.jpeg" alt="Patent Certificate 1" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="assets/img/patent2.jpeg" target="_blank" class="patent-card" data-aos="fade-up">
+              <img src="assets/img/patent2.jpeg" alt="Patent Certificate 2" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="assets/img/patent3.jpeg" target="_blank" class="patent-card" data-aos="fade-up">
+              <img src="assets/img/patent3.jpeg" alt="Patent Certificate 3" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">2026</strong> <span>All Rights Reserved</span></p>
+        </div>
+        <div class="credits">
+          <a href="https://panamacorporationltd.com/">PANAMA CORPORATION LTD.</a>
+        </div>
+      </div>
+    </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
