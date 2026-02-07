@@ -82,6 +82,57 @@
         margin-bottom: 2rem;
       }
     }
+
+    /* Container Spacing */
+.btn-group-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Base Button Styles */
+.lang-btn {
+  padding: 12px 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50px !important; /* Rounded pill shape */
+  margin: 0 8px;
+  border: 2px solid transparent;
+}
+
+/* Primary/Active State */
+.btn-primary.lang-btn {
+  background: linear-gradient(135deg, #0d6efd 0%, #004dc7 100%);
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+  color: #fff;
+}
+
+/* Outline/Inactive State */
+.btn-outline-primary.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+/* Hover Effects */
+.lang-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+.btn-outline-primary.lang-btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Responsive adjustment */
+@media (max-width: 576px) {
+  .lang-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
   </style>
 </head>
 
@@ -148,12 +199,8 @@
       </div>
       <!-- End Section Title -->
 
-      <br />
-
-
-
-
-      <div class="container text-center my-4">
+      
+      <!-- <div class="container text-center my-4">
 
           <div class="btn-group" role="group">
 
@@ -175,7 +222,27 @@
 
           </div>
 
-      </div>
+      </div> -->
+
+      <div class="container text-center btn-group-container">
+    <div role="group" aria-label="Language Toggle">
+        <button
+            id="btn-en"
+            class="btn btn-primary lang-btn"
+            onclick="toggleLanguage('en')"
+        >
+            English Articles
+        </button>
+
+        <button
+            id="btn-kn"
+            class="btn btn-outline-primary lang-btn"
+            onclick="toggleLanguage('kn')"
+        >
+            ಕನ್ನಡ ಲೇಖನಗಳು
+        </button>
+    </div>
+</div>
 
 
 

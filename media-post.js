@@ -13,7 +13,8 @@ const cardData = [
     img: "assets/img/portfolio/2.jpg",
     src: "The Indian Express",
     desc: "Panama to develop Coal, Iron Ore Blocks in Zimbabwe",
-    lang: "en"
+    lang: "en",
+    link: "https://timesofindia.indiatimes.com/Vivek-Raj-CEO-of-Mangalore-based-Panama-Group-had-an-exclusive-face-to-face-meeting-with-Arthur-Mutambara-deputy-Prime-minister-of-Zimbabwe-at-Bangalore-recently-Arthur-Mutambara-has-privately-invited-Panama-group-a-diversified-trading-company-to-develop-coal-and-iron-ore-mine-blocks-existing-in-Zimbabwe-/articleshow/12416414.cms"
   },
   {
     img: "assets/img/portfolio/4.jpg",
@@ -57,7 +58,18 @@ const cardData = [
     desc: "Congress Covid-19 Helpline to distribute 3000 kits",
     lang: "en"
   },
-
+  {
+    img: "assets/img/portfolio/23.jpeg",
+    src: "Forbes",
+    desc: "Empowering Global Agriculture through AI and Precision Agritech",
+    lang: "en"
+  },
+  {
+  img: "assets/img/portfolio/24.jpeg",
+  src: "Forbes India",
+  desc: "Vivek Raj on Union Budget 2026 and Bharat-VISTAAR Integration",
+  lang: "en"
+  },
   // ---------- KANNADA ----------
   {
     img: "assets/img/portfolio/3.jpg",
@@ -117,7 +129,8 @@ const cardData = [
     img: "assets/img/portfolio/20.jpg",
     src: "Prajavani",
     desc: "No thirst for power, money, popularity",
-    lang: "kn"
+    lang: "kn",
+    link: "https://www.prajavani.net/district/dakshina-kannada/prajavani-deccan-herald-mangalore-upsc-883200.html"
   }
 ];
 
