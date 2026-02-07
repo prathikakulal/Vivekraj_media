@@ -70,6 +70,13 @@ const cardData = [
   desc: "Vivek Raj on Union Budget 2026 and Bharat-VISTAAR Integration",
   lang: "en"
   },
+  {
+    img: "assets/img/portfolio/25.jpeg",
+    src:"Mangloretoday",
+    desc: "World's youngest CEO Vivek Raj chosen for Summer Davos by World Economic Forum.",
+    lang: "en"
+  },
+
   // ---------- KANNADA ----------
   {
     img: "assets/img/portfolio/3.jpg",
